@@ -47,6 +47,6 @@ class Timer{
     }
 
     set timeleft(time) {
-        this.time.value = time.toFixed(2);
+        this.time.value = Math.abs(time.toFixed(2));
     }
 }
