@@ -13,7 +13,6 @@ const timer = new Timer(timeInput, start, stop, {
     },
     ontick(timeleft) {
         let rem = perimeter * timeleft / initTime - perimeter;
-        console.log(rem)
         circle.setAttribute('stroke-dashoffset', rem);
     },
     onstop() {

@@ -20,7 +20,7 @@ class Timer{
         }
 
         this.tick()
-        this.interval = setInterval(this.tick, 20);
+        this.interval = setInterval(this.tick, 15);
     }
 
     tick = () => {
@@ -31,7 +31,7 @@ class Timer{
         if (this.timeleft <= 0) {
             this.stop();
         }else{
-            this.timeleft -= 0.02
+            this.timeleft -= 0.015
         }
     }
 
