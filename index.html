@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMER</title>
+
+    <link rel="stylesheet" href="app.css">
+</head>
+<body class="flex-col">
+
+    <svg height="350" width="350">
+        <circle 
+        r="150"
+        cx="175"
+        cy="175"
+        fill="transparent"
+        stroke="blue"
+        stroke-width="20"        
+        transform="rotate(-90,175,175)"
+        stroke-linecap="round"
+        />
+    </svg>
+
+    <div id="input" class="flex-col">
+        <input type="text" id="duration" value="30">
+        <div id="btns" class="flex-col">
+            <button id="start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                  </svg>
+            </button>
+            <button id="stop">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
+                  </svg>
+            </button>            
+        </div>
+    </div>
+    <script src="timer.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

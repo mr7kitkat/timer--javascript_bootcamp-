@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-col {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+circle {
+    position: relative;
+}
+
+#input{
+    position: absolute;
+}
+
+input, button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+#duration {
+    font-size: 4rem;
+}
+
+#btns {
+    margin-top: 10px;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 120px;
+}
+
+button svg {
+    height: 50px;
+    width: 50px;
+}
+
+#start svg {
+    color: rgb(0, 228, 0);
+    fill: currentColor;
+}
+
+
+#stop svg {
+    color: rgb(255, 38, 0);
+    fill: currentColor;
+}
